@@ -1,0 +1,2 @@
+/* Compatibility wrapper for deployments that still reference style.css */
+@import url('./styles.css');

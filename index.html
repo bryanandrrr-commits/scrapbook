@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Valentine's Day!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bg-music" loop>
+    <source src="./assets/audio/plya.wav" type="audio/wav" />
+  </audio>
+
+  <button class="music-toggle" id="music-toggle" aria-label="Toggle music">♪</button>
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+
+  <main class="book-container">
+    <section class="book" aria-label="Valentine scrapbook book">
+      <article class="page left-page reveal" id="page1">
+        <div class="page-content">
+          <h1 class="title">Your Valentine!</h1>
+          <p class="subtitle">Vellya Ivory's Valentine day</p>
+          <p class="note">Made with love 😛💗</p>
+          <p class="note">Hey! Read me pleaseeeee (jangan lupa pencet yang di kanan atas 🤭🫢)</p>
+          <div class="floating-hearts">
+            <span class="heart">♥</span>
+            <span class="heart">♥</span>
+            <span class="heart">♥</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="page right-page reveal" id="page2">
+        <div class="page-content">
+          <h2>Throwback Dulu Yukss</h2>
+          <div class="timeline">
+            <div class="timeline-item micro">
+              <img src="./assets/images/braga.jpeg" alt="First time?" />
+              <div>
+                <div class="date">17 Januari, 2024</div>
+                <p>Waktu baru liat, kok women ini cantik juga yaak. Awalnya aku iseng mau kenalan, tapi ternyata malah lanjut👻</p>
+              </div>
+            </div>
+            <div class="timeline-item micro">
+              <img src="./assets/images/ya.jpeg" alt="Di Braga" />
+              <div>
+                <div class="date">5 Januari, 2026</div>
+                <p>After 2 taun kenal baru meet up dan REALLLL CANTIK BANGETT WOI. Lucu banget kayak bocil (maaff yahc) 😛🥹 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="page left-page reveal" id="page3">
+        <div class="page-content">
+          <h2>I Want To let You Know That...</h2>
+          <div class="sticky-notes">
+            <div class="sticky-note micro">You're very loveable. Aku bangga banget sama semua usaha kamuu ♥</div>
+            <div class="sticky-note micro">You made my days. Makasiii buat selama ini uda buat hari hariku engga flatt</div>
+            <div class="sticky-note micro">You're the most amazing person I've ever met. Walaupun imut, kamu tetap anggun & karismatik </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="page right-page reveal" id="page4">
+        <div class="page-content">
+          <h2>Mini Gallery</h2>
+          <div class="gallery">
+            <div class="polaroid micro">
+              <img src="./assets/images/fens.jpeg" alt="Idol nic" />
+              <p>Me = #1 fans</p>
+            </div>
+            <div class="polaroid micro">
+              <img src="./assets/images/flowerday.jpeg" alt="Flower day" />
+              <p>Flower day</p>
+            </div>
+            <div class="polaroid micro">
+              <img src="./assets/images/kue.jpeg" alt="Cake decor" />
+              <p>Cake Decorate</p>
+            </div>
+            <div class="polaroid micro">
+              <img src="./assets/images/bday.jpeg" alt="Bday" />
+              <p>Your sweet seventeen</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="page left-page reveal" id="page5">
+        <div class="page-content">
+          <h2>Reasons Why I Love You</h2>
+          <div class="reason-cards">
+            <button class="reason-card micro" data-reason="1">Your Eyes</button>
+            <button class="reason-card micro" data-reason="2">Your Smile</button>
+            <button class="reason-card micro" data-reason="3">Your Hobbies</button>
+            <button class="reason-card micro" data-reason="4">Your Personality</button>
+            <button class="reason-card micro" data-reason="5">Your Kindness</button>
+            <button class="reason-card micro" data-reason="6">Your Humor</button>
+            <button class="reason-card micro" data-reason="7">Your Intelligence</button>
+            <button class="reason-card micro" data-reason="8">Your Strength</button>
+            <button class="reason-card micro" data-reason="9">Your Mindset </button>
+            <button class="reason-card micro" data-reason="10">Your Principles</button>
+            <button class="reason-card micro" data-reason="11">Your Music Taste</button>
+            <button class="reason-card micro" data-reason="12">Your Ambition</button>
+            <button class="reason-card micro" data-reason="13">Your Hair</button>
+            <button class="reason-card micro" data-reason="14">Your Voice</button>
+            <button class="reason-card micro" data-reason="15">Your self</button>
+          </div>
+
+          <div id="reason-popup" class="popup" role="dialog" aria-modal="true" aria-label="Reason popup">
+            <div class="popup-content">
+              <span class="close" id="popup-close">&times;</span>
+              <p id="reason-text"></p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="page right-page reveal" id="page6">
+        <div class="page-content">
+          <h2>Surprise!</h2>
+          <button class="heart-button micro" id="heart-button">♥ Click Me ♥</button>
+          <p id="surprise-message" class="hidden">My dearest, vellya. Aku buat website ini kusus just for you. Its okay kamu tida usah bingungss, because you deserve it. You deserve to be loved. And aku yang memilih itu. Yaa i know kita jauh... but that's what we have now. It's okey, memang terlalu awal ya but you know i'll always stay. Gaa perlu bingungg, focus on yourself aja and i will always support you even at your lowest, kya janji kita sebelumnya kan? aku bakal selalu menepatiii. Oneday, kamu bakal jadi versi terbaik dari diri you, mungkin aku juga. Selama aku masih ada, i'll always choose you. You are worth it, valuable, and loveable. And i hope oneday, kita gabakal sejauh sekarang. I adore you, vellya. BTWW there's another gift, semoga hari ini nyampe dan ga rusakk...</p>
+        </div>
+      </article>
+    </section>
+
+    <nav class="navigation">
+      <button id="prev-btn">Previous</button>
+      <button id="next-btn">Next</button>
+    </nav>
+  </main>
+
+  <nav class="quick-nav" aria-label="Scrapbook sections">
+    <a href="#page1">Cover</a>
+    <a href="#page2">Story</a>
+    <a href="#page3">Notes</a>
+    <a href="#page4">Gallery</a>
+    <a href="#page5">Reasons</a>
+    <a href="#page6">Surprise</a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
